@@ -1,8 +1,8 @@
-resource "random_pet" "names" {
+resource "random_pet" "name" {
   length    = "4"
   separator = "-"
 }
 
 output "pet_name" {
- value = "${random_pet.names.id}"
+ value = "${random_pet.name.id}"
 }
