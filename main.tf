@@ -10,3 +10,7 @@ output "pet_name" {
 output "pet_name2" {
  value = "${random_pet.name.id}"
 }
+
+output "pet_name3" {
+ value = "${random_pet.name.id}"
+}
