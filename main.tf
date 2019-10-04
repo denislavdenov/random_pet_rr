@@ -3,6 +3,12 @@ resource "random_pet" "name" {
   separator = "-"
 }
 
+resource "null_resource" "example" {
+  triggers = {
+    always_run = "${timestamp()}"
+  }
+}
+
 output "pet_name" {
  value = "${random_pet.name.id}"
 }
